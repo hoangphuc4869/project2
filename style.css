@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header_wrapper {
+  width: 100%;
+}
+.header {
+  width: 1280px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar > ul > li {
+  position: relative;
+  /* background-color: blueviolet; */
+}
+.menu > li > a {
+  padding: 20px;
+}
+
+.navbar ul li a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 2px;
+  background-color: rebeccapurple;
+  opacity: 0;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.navbar ul li:hover a::after {
+  opacity: 1;
+}
+
+/* .navbar > ul > li:hover > a {
+  border-bottom: 1px solid #000;
+  color: rgb(38, 38, 240);
+} */
+
+.header_name p {
+  margin-bottom: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.navbar li:hover .subnav {
+  display: block;
+}
+
+.subnav {
+  position: absolute;
+  display: none;
+}
+
+.youtube_icon {
+  padding: 10px;
+  border-radius: 50%;
+  transition: transform 0.1s ease-in-out;
+}
+.fa-youtube {
+  font-size: 30px;
+}
+.header .youtube_icon:hover .fa-brands {
+  color: #fff;
+}
+
+.header .youtube_icon:hover {
+  background-color: red;
+  cursor: pointer;
+  fill: #fff;
+
+  animation: animateBox 0.2s ease-in-out;
+}
+.subnav li a {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.subnav li:hover a {
+  background-color: rgb(1, 1, 114);
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+.form-control {
+  margin-bottom: 10px;
+}
+
+.right .btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+
+@keyframes animateBox {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+.footer_wrapper {
+  background-image: url("https://www.karos.com.tw/wp-content/uploads/2018/12/skulls.png");
+  background-color: #01112c;
+  background-blend-mode: overlay;
+  mix-blend-mode: multiply;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.footer_top p {
+  color: #fff;
+}
+.container {
+  /* margin-left: 0;
+  margin-right: 0; */
+}
+.left p::first-line {
+  color: #00ccff;
+}
+
+.title,
+.contact {
+  color: rgb(243, 243, 9);
+  padding-left: 10px;
+  border-left: 3px solid rgb(243, 243, 9);
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.left_text {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.mid {
+  margin-top: 60px;
+}
+
+.right .btn {
+  width: 100%;
+}
+.footer_bot1 {
+  background-image: url("https://www.karos.com.tw/wp-content/uploads/2018/12/skulls.png");
+  background-color: rgb(130, 130, 4);
+  background-blend-mode: overlay;
+}
+
+.footer-bot {
+  background-image: url("https://www.karos.com.tw/wp-content/uploads/2018/12/skulls.png");
+  background-color: rgb(130, 130, 4);
+  background-blend-mode: overlay;
+  width: 1280px;
+  text-align: right;
+  margin: 0 auto;
+}
+
+.footer-bot p {
+  margin-bottom: 0;
+  padding: 20px;
+  font-weight: 500;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+  /* width: 900px; */
+}
+
+@media (max-width: 739px) {
+}
+
+@media (max-width: 599px) {
+}
