@@ -25,17 +25,32 @@ ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin: 0 auto;
+  margin: 20px auto;
+  position: relative;
 }
 .navbar_list {
   position: relative;
-  padding-right: 20px;
+  padding-right: 50px;
 }
 
 .youtube_icon {
   background-color: yellow;
   padding: 10px;
   border-radius: 50%;
+  position: absolute;
+
+  top: 10px;
+  right: 0;
+}
+
+.heading {
+  background-image: linear-gradient(0, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://www.karos.com.tw/wp-content/uploads/2018/12/-e1545639992966.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .youtube_icon:hover {
@@ -49,10 +64,25 @@ ul {
   list-style: none;
 }
 
-.navbar_list ul li a,
-.navbar_list ul li .check {
-  padding: 20px;
+.subnav li a {
+  padding: 10px 20px;
 }
+
+.img_text .para1 {
+  font-size: 2rem;
+}
+.img_text .para2 {
+  font-size: 1rem;
+}
+.navbar_list > ul > li > a,
+.navbar_list ul li .check {
+  padding: 15px 20px;
+}
+
+.has_child {
+  padding-right: 0;
+}
+
 @keyframes fadedown {
   from {
     opacity: 0;
@@ -80,10 +110,27 @@ li .subnav {
   position: relative;
 }
 
+.header_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_img .header_name {
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
 .navbar_list > ul > li:hover > a,
 .navbar_list > ul > li:hover > .check {
   color: blue;
   cursor: pointer;
+}
+
+.img_text p {
+  color: #fff;
+  font-size: 20px;
 }
 
 .navbar_list > ul > li > a::after,
@@ -121,12 +168,6 @@ li .subnav {
   top: 1.5rem;
   right: 5rem;
   justify-content: space-between;
-}
-.youtube_icon {
-  position: absolute;
-  right: 0;
-  top: 10px;
-  right: 5px;
 }
 
 .toggle_btn .bar {
