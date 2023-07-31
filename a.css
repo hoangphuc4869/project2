@@ -1,0 +1,113 @@
+.header_wrapper {
+  width: 100%;
+}
+.header {
+  width: 1280px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+
+.navbar > ul > li > a {
+  padding: 20px;
+}
+
+.navbar > ul > li {
+  position: relative;
+  /* background-color: blueviolet; */
+}
+.menu > li > a {
+  padding: 20px;
+}
+
+.navbar ul li a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 2px;
+  background-color: rebeccapurple;
+  opacity: 1;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.navbar ul li:hover a::after {
+    opacity: 1;
+}
+
+.navbar ul li:hover a::after {
+  opacity: 1;
+}
+
+/* .navbar > ul > li:hover > a {
+  border-bottom: 1px solid #000;
+  color: rgb(38, 38, 240);
+} */
+.header_left {
+  display: flex;
+}
+.header_left p {
+  margin-bottom: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+li:hover a .subnav {
+  display: block;
+}
+
+li .subnav {
+  position: absolute;
+  display: none;
+}
+
+.youtube_icon {
+  padding: 10px;
+  border-radius: 50%;
+  transition: transform 0.1s ease-in-out;
+}
+.fa-youtube {
+  font-size: 30px;
+}
+.header .youtube_icon:hover .fa-brands {
+  color: #fff;
+}
+
+.header .youtube_icon:hover {
+  background-color: red;
+  cursor: pointer;
+  fill: #fff;
+
+  animation: animateBox 0.2s ease-in-out;
+}
+.subnav li a {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.subnav li:hover a {
+  background-color: rgb(1, 1, 114);
+  color: #fff;
+}
+<ul>
+              <li><a href="#">Về Giai Lục</a></li>
+              <li class="has_child">
+                <a href="#">Sản phẩm và Dịch vụ</a>
+                <ul class="subnav ps-0">
+                  <li><a href="#">Dòng điều hòa thương mại</a></li>
+                  <li><a href="#">Loại đông lạnh và làm lạnh</a></li>
+                  <li><a href="#">Dòng điều hòa tiết kiệm điện</a></li>
+                  <li><a href="#">Dòng điều hòa công nghiệp</a></li>
+                  <li><a href="#">Dòng máy chủ nước đá</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Hiệu suất bán hàng</a></li>
+              <li><a href="#">Tin mới nhất</a></li>
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+          </div>
