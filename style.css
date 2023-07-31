@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 ul {
   margin-bottom: 0;
   padding: 0;
@@ -16,7 +18,9 @@ ul {
   z-index: 99999;
   top: 0;
   box-shadow: 0px -5px 20px 0 black;
+  opacity: 0.5;
 }
+
 .header_img img {
   width: 151px;
   height: auto;
@@ -303,7 +307,7 @@ a {
   background-color: #01112c;
   background-blend-mode: overlay;
   mix-blend-mode: multiply;
-  padding-top: 50px;
+  padding-top: 150px;
   padding-bottom: 50px;
 }
 .footer {
