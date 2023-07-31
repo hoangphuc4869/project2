@@ -50,7 +50,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  height: 200vh;
 }
 
 .youtube_icon:hover {
@@ -81,6 +81,88 @@ ul {
 
 .has_child {
   padding-right: 0;
+}
+.video_section_wrapper {
+  width: 100%;
+  margin: 100px auto;
+}
+
+.video_section {
+  display: flex;
+  width: 1280px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.video_left {
+  margin-right: 50px;
+  width: 100%;
+}
+
+.video_content .v_title {
+  color: #154d80;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.video_content {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.video_right .v_title {
+  border-left: 5px solid rgb(1, 1, 74);
+  padding-left: 20px;
+}
+
+.info_wrapper {
+  width: 100%;
+}
+
+.info_section {
+  width: 1280px;
+  margin: 100px auto;
+}
+
+.info_content .info_text {
+  list-style: none;
+  padding: 0;
+}
+
+.info_text li {
+  position: relative;
+  padding-left: 50px;
+}
+.info_img img {
+  width: 100%;
+}
+
+.info_title {
+  color: #154d80;
+  border-left: 5px solid rgb(1, 1, 74);
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.info_text p::first-line {
+  color: #154d80;
+}
+
+.info_text p {
+  line-height: 40px;
+}
+
+.info_text li::before {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.info_section {
+  display: flex;
 }
 
 @keyframes fadedown {
@@ -318,7 +400,9 @@ a {
 
   .footer,
   .footer_bot,
-  .header {
+  .header,
+  .video_section,
+  .info_section {
     width: auto;
   }
   li .subnav {
@@ -347,7 +431,9 @@ a {
   /* width: 900px; */
   .footer,
   .footer_bot,
-  .header {
+  .header,
+  .video_section,
+  .info_section {
     width: 900px;
   }
   li .subnav {
@@ -376,7 +462,9 @@ a {
 
   .footer,
   .footer_bot,
-  .header {
+  .header,
+  .video_section,
+  .info_section {
     width: auto;
   }
   li .subnav {
@@ -404,8 +492,23 @@ a {
   }
   .footer,
   .footer_bot,
-  .header {
+  .header,
+  .video_section,
+  .info_section {
     width: auto;
+  }
+
+  .video_section {
+    flex-wrap: wrap;
+  }
+
+  .video_left {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .video_right {
+    padding-right: 10px;
+    padding-left: 10px;
   }
   li .subnav {
     position: relative;
