@@ -233,11 +233,11 @@ td::before {
 
 .timeline_wrapper {
   width: 100%;
-  margin: 0 auto;
+  margin: 112px auto;
   background-color: grey;
 }
 .timeline {
-  margin: 200px auto;
+  margin: 0 auto;
   /* background-color: yellowgreen; */
   width: 1280px;
   position: relative;
