@@ -152,6 +152,18 @@ ul {
   border-left: 5px solid rgb(1, 1, 74);
   padding-left: 20px;
 }
+.text_box_date_right {
+  position: absolute;
+  top: 40%;
+  right: -150px;
+  color: blue;
+}
+.text_box_date_left {
+  position: absolute;
+  top: 40%;
+  color: blue;
+  left: -150px;
+}
 
 .info_wrapper {
   width: 100%;
@@ -212,13 +224,25 @@ ul {
 td {
   padding-left: 10px;
   padding-right: 10px;
+  position: relative;
 }
 
+.timeline_title {
+  width: 1280px;
+  margin: 200px auto 100px auto;
+  text-align: center;
+  padding: 40px;
+  border-bottom: 1px solid rgba(148, 146, 146, 0.3);
+  font-size: 1.5rem;
+}
 td::before {
   content: ".";
-  color: red;
+  color: blue;
   font-size: 20px;
   padding-right: 10px;
+  /* text-align: center; */
+  display: inline-block;
+  width: 1rem;
 
   /* line-height: 24px; */
 }
@@ -233,8 +257,8 @@ td::before {
 
 .timeline_wrapper {
   width: 100%;
-  margin: 112px auto;
-  background-color: grey;
+  margin: 0 auto;
+  background-color: #fff;
 }
 .timeline {
   margin: 0 auto;
@@ -242,14 +266,16 @@ td::before {
   width: 1280px;
   position: relative;
   /* background-color: #00ccff; */
+  margin-bottom: 100px;
 }
 
 .timeline::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 150px;
   left: 50%;
-  background-color: rgb(34, 33, 33);
+  bottom: 100px;
+  background-color: rgba(148, 146, 146, 0.3);
   /* margin-left: -1px; */
   z-index: -1px;
   width: 3px;
@@ -267,9 +293,10 @@ td::before {
   /* margin-bottom: 20px; */
   padding: 20px 30px;
   position: relative;
-  padding: 20px 50px;
+  padding: 20px 30px;
   background-color: #fff;
   border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .left_container {
@@ -284,8 +311,11 @@ td::before {
   font-size: 30px;
   position: absolute;
   z-index: 10;
-  right: -15px;
+  right: -25px;
   top: 40%;
+}
+.fa-calendar-days::before {
+  background-color: yellow;
 }
 
 .left_container_arrow {
@@ -311,11 +341,8 @@ td::before {
   height: 0;
 }
 
-.fa-calendar-days {
-}
-
 .right_container .fa-calendar-days {
-  left: -15px;
+  left: -21px;
 }
 
 @keyframes fadedown {
@@ -481,10 +508,7 @@ a {
 .footer_top p {
   color: #fff;
 }
-.container {
-  /* margin-left: 0;
-  margin-right: 0; */
-}
+
 .left p::first-line {
   color: #00ccff;
 }
@@ -589,7 +613,8 @@ li .check {
   .video_section,
   .info_section,
   .slider,
-  .timeline {
+  .timeline,
+  .timeline_title {
     width: auto;
   }
   li .subnav {
@@ -651,7 +676,8 @@ li .check {
   .video_section,
   .info_section,
   .slider,
-  .timeline {
+  .timeline,
+  .timeline_title {
     width: 900px;
   }
   li .subnav {
@@ -698,7 +724,8 @@ li .check {
   .video_section,
   .info_section,
   .slider,
-  .timeline {
+  .timeline,
+  .timeline_title {
     width: auto;
   }
   li .subnav {
@@ -770,7 +797,8 @@ li .check {
   .video_section,
   .info_section,
   .slider,
-  .timeline {
+  .timeline,
+  .timeline_title {
     width: auto;
   }
 
