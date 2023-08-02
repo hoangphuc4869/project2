@@ -194,18 +194,52 @@ figure {
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
+  /* width: 100%; */
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.sub-title {
+  font-size: 30px;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
 }
 
+.modal img {
+  position: absolute;
+  width: 30%;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
 .overlay {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   z-index: 99999;
   display: none;
-  animation: fadein linear 0.2s;
+  animation: fadein linear 0.3s;
+  /* width: 100%; */
 }
 
 .popup_:checked ~ .overlay,
@@ -702,7 +736,8 @@ li .check {
   .info_section,
   .slider,
   .timeline,
-  .timeline_title {
+  .timeline_title,
+  .sub {
     width: auto;
   }
   li .subnav {
@@ -765,7 +800,8 @@ li .check {
   .info_section,
   .slider,
   .timeline,
-  .timeline_title {
+  .timeline_title,
+  .sub {
     width: 900px;
   }
   li .subnav {
@@ -813,7 +849,8 @@ li .check {
   .info_section,
   .slider,
   .timeline,
-  .timeline_title {
+  .timeline_title,
+  .sub {
     width: auto;
   }
   li .subnav {
@@ -886,7 +923,8 @@ li .check {
   .info_section,
   .slider,
   .timeline,
-  .timeline_title {
+  .timeline_title,
+  .sub {
     width: auto;
   }
 
