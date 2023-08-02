@@ -157,12 +157,14 @@ ul {
   top: 40%;
   right: -150px;
   color: blue;
+  font-weight: bold;
 }
 .text_box_date_left {
   position: absolute;
   top: 40%;
   color: blue;
   left: -150px;
+  font-weight: bold;
 }
 
 .info_wrapper {
@@ -234,6 +236,7 @@ td {
   padding: 40px;
   border-bottom: 1px solid rgba(148, 146, 146, 0.3);
   font-size: 1.5rem;
+  font-weight: bold;
 }
 td::before {
   content: ".";
@@ -316,6 +319,8 @@ td::before {
 }
 .fa-calendar-days::before {
   background-color: yellow;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .left_container_arrow {
@@ -394,6 +399,22 @@ li .subnav {
 .navbar_list > ul > li:hover > .check {
   color: blue;
   cursor: pointer;
+}
+
+.capcha-check label {
+  color: #fff;
+}
+
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.capcha-check {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .img_text p {
