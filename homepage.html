@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -39,7 +42,7 @@
 
           <div class="navbar_list">
             <ul>
-              <li><a href="#">關於嘉祿</a></li>
+              <li><a href="tree.html">關於嘉祿</a></li>
               
               <li>
                 <label class="check" for="sp_check">產品與服務</label>
@@ -267,6 +270,11 @@
                         id="message"
                         placeholder="訊息"
                   ></textarea>
+                  <div class="capcha-check">
+                    
+                    <input type="checkbox" name="capcha" id="capcha">
+                    <label for="capcha">I am not a robot</label>
+                  </div>
                 
                 <input type="submit" value="寄送" class="btn btn2 btn-primary" />
                 </div>
