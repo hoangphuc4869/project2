@@ -359,6 +359,29 @@ hr {
   width: 20%;
 }
 
+.post-wrapper {
+  width: 100%;
+}
+
+.posts {
+  width: 1280px;
+  margin: 120px auto;
+  padding-top: 100px;
+}
+
+.post-title {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+
+.line {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.post-content {
+  color: #154d80;
+}
 .tree-wrapper {
   width: 1400px;
   display: grid;
