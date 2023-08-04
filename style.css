@@ -791,7 +791,8 @@ li .check {
   .timeline,
   .timeline_title,
   .sub,
-  .about {
+  .about,
+  .posts {
     width: auto;
   }
   li .subnav {
@@ -852,7 +853,8 @@ li .check {
   .timeline,
   .timeline_title,
   .sub,
-  .about {
+  .about,
+  .posts {
     width: 900px;
   }
   li .subnav {
@@ -897,7 +899,8 @@ li .check {
   .timeline,
   .timeline_title,
   .sub,
-  .about {
+  .about,
+  .posts {
     width: auto;
   }
   li .subnav {
@@ -969,7 +972,8 @@ li .check {
   .timeline,
   .timeline_title,
   .sub,
-  .about {
+  .about,
+  .posts {
     width: auto;
   }
   .video_section {
