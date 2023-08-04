@@ -1187,4 +1187,7 @@ li .check {
     font-size: 10px;
     z-index: 9999;
   }
+  .tree-wrapper {
+    display: none;
+  }
 }
