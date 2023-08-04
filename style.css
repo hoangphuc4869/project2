@@ -1047,6 +1047,9 @@ li .check {
     border-left: 0;
     left: -15px;
   }
+  .tree {
+    display: none;
+  }
 }
 
 @media (max-width: 599px) {
